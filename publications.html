@@ -103,7 +103,7 @@ bordercolor="#669999" bgcolor="#D8EBEB" height="25" width="645">
 </ul>
     <script>
 
-    d3.csv("papers.csv", function(data) {
+    d3.csv("papers.csv", function(data0) {
   //  console.log(data["Author"]);
         
         /*
@@ -119,15 +119,15 @@ id_article: "133"
         */
 
 // c1 asc, c2 desc, c3 asc, c4 asc
-data.sort(function (a, b) {
+/*data.sort(function (a, b) {
     return (a["id_article"] < b["id_article"]) ? -1 : (a["id_article"] == b["id_article"]) ?
         (b["id_article"] - a["id_article"])  : -1;
 });
-        
+     */   
         
 
-	//data.sort(sortFunction);
-
+	
+/*
 function sortFunction(a, b) {
     if (a["id_article"] === b["id_article"]) {
         return 0;
@@ -135,9 +135,20 @@ function sortFunction(a, b) {
     else {
         return (a["id_article"] < b["id_article"]) ? -1 : 1;
     }
-}
+}*/
+//data.sort(sortFunction);
+      
+      /*  data.sort(function (a, b) {
+     return a["id_article"] - b["id_article"];
+});*/
 
-	
+       /// var data=new Array();
+        
+        var data = data0.sort(function(a, b) {
+    var l = Number(a["id_article"]), r = Number(b["id_article"]);
+    return (l > r) ? -1 : ((l < r) ? 1 : 0);
+});
+	console.log(data0);
       var html="";        
     
 for (var i=0; i<data.length; i++)    {
