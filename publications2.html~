@@ -33,10 +33,14 @@ bordercolor="#669999" bgcolor="#D8EBEB" height="25" width="645">
 
 </center>
 
-<p><b><font color="#666600"><font size="+3"><a name=publications>Publications</a></font></font></b>
-  <br><b><font size="+2"><a name=high>High Energy Physics:</a></font></b><ul><center><table cellpadding='5' width=640>
-<tr>
 
+<p><span class="title"><a name="publications">Publications</a></span> <br>
+
+
+<b><font size="+2"><a name=high>High Energy Physics:</a></font></b>
+<ul><center>
+<table cellpadding='5' width=640>
+  <tr>
 
     <td valign=top>
 
@@ -51,7 +55,7 @@ bordercolor="#669999" bgcolor="#D8EBEB" height="25" width="645">
 																																																									  L.Pando Zayas and A.A.Tseytlin, "<i>Non-Extremal Gravity Duals for Fractional D3-Branes on the Conifold</i>", JHEP <b>0104</b> (2001) 033, <a href="http://arxiv.org/abs/hep-th/0102105">hep-th/0102105</a><p><li>A.Buchel, "<i>Comments on fractional instantons in N=2 gauge theories</i>", Phys. Lett. B<b>514</b> (2001) 417-425, <a href="http://arxiv.org/abs/hep-th/0101056">hep-th/0101056</a><p><li>A.Buchel, "<i>Finite temperature resolution of the Klebanov-Tseytlin singularity</i>", Nucl. Phys. B<b>600</b> (2001) 219-234, <a href="http://arxiv.org/abs/hep-th/0011146">hep-th/0011146</a><p><li>A.Buchel, A.W.Peet and  J.Polchinski, "<i>Gauge Dual and Noncommutative Extension of an N=2 Supergravity Solution</i>", Phys. Rev. D<b>63</b> (2001) 044009, <a href="http://arxiv.org/abs/hep-th/0008076">hep-th/0008076</a><p><li>P.C.Argyres and  A.Buchel, "<i>New S-dualities in N=2 supersymmetric SU(2) x SU(2) gauge theory</i>", JHEP <b>9911</b> (1999) 014, <a href="http://arxiv.org/abs/hep-th/9910125">hep-th/9910125</a><p><li>A.Buchel, G.Shiu and S.-H.H.Tye, "<i>Anomaly Cancelations in Orientifolds with Quantized B Flux</i>", Nucl. Phys. B<b>569</b> (2000) 329-361, <a href="http://arxiv.org/abs/hep-th/9907203">hep-th/9907203</a><p><li>P.C.Argyres and  A.Buchel, "<i>The Nonperturbative Gauge Coupling of N=2 Supersymmetric Theories</i>", Phys. Lett. B<b>442</b> (1998) 180-184, <a href="http://arxiv.org/abs/hep-th/9806234">hep-th/9806234</a><p><li>P.C.Argyres and  A.Buchel, "<i>Deriving N=2 S-dualities from Scaling for Product Gauge Groups</i>", Phys. Lett. B<b>431</b> (1998) 317-328, <a href="http://arxiv.org/abs/hep-th/9804007">hep-th/9804007</a>
 </td></tr></table></center></ul>
 
- 
+
     
 
 <b><font size="+2"><a name=high>Statistical Physics:</a></font></b><ul><center>
@@ -69,12 +73,10 @@ and Electron-Positron Pair Production</i>", Physica Scripta <b>49</b> (1994) 16<
 	    Approach in Terms of Collective Coordinates</i>", Physica Scripta <b>49</b> (1994) 9</td></tr></table></center></ul>
      
     <br><a href=#Contents>Back to the menu</a>
-
-
-
-    <p><b><font color="#666600"><font size="+3"><a name=proceedings>Conference Proceedings</a></font></font></b><ul><center><table cellpadding='5' width=640>
-
-
+    
+  <p><span class="title"><a name=publications>Conference Proceedings</a></span>
+<ul><center>
+<table cellpadding='5' width=640>    
 <tr>
 
 <td valign=top><p><li>A.Buchel, "<i>On SUGRA description of boost-invariant conformal plasma at strong coupling</i>", Ten Years of AdS/CFT: A Workshop Celebrating the Tenth Anniversary of the Maldacena Conjecture, Buenos Aires, Argentina, 19-21 Dec 2007, <a href="http://arxiv.org/abs/0803.3421">0803.3421</a><p><li>A.Buchel, "<i>On effective action of string theory flux  compactifications</i>", Proceedings of the 3rd Symposium on Quantum Theory and Symmetries (QTS3) 10 - 14 Sept 2003<p><li>A. Buchel and  J.Walcher, "<i><i>The Tachyon does Matter</i></i>", Fortsch. Phys. <b>51</b> (2003) 885-891, <a href="http://arxiv.org/abs/hep-th/0212150">hep-th/0212150</a><p><li>A.Buchel, "<i><i>Ultrastrong coupling in supersymmetric gauge theories</i></i>", Prepared for 21st Annual MRST (Montreal-Rochester-Syracuse-Toronto) Meeting: Conference on High-Energy Physics at the Millenium (MRST 99 and the Sundarfest), Ottawa, Ontario, Canada, 10-12
@@ -84,9 +86,8 @@ Published in *Erice 1997, Highlights of subnuclear physics: 50 years later* 536-
   
     
 <br><a href=#Contents>Back to the menu</a>
-<p><b><font color="#666600"><font size="+3"><a name=dissertation>Dissertation</a></font></font></b><ul><center><table cellpadding='5' width=640>
 
-
+    <p><span class="title"><a name=dissertation>Dissertation</a></span><ul><center><table cellpadding='5' width=640>
 <tr>
 
 <td valign=top><p><li>Alexander Sergeevich Buchel, "<i>Statistical Mechanics Of Cracks Dualities In Supersymmetric Field Theories Orientifolds Of Type IIb Strings With Discrete B Flux</i>", UMI-99-39926-mc (microfiche), 1999. 216pp.
