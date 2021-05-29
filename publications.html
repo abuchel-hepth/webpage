@@ -1,0 +1,227 @@
+
+
+
+
+
+  
+
+<html>
+
+    <head>
+                <title>Publications of Alex Buchel</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.js" integrity="sha512-xNbd4nBdW6REeaX+LY+IBkNT3tZTyNzfEwhdOcEENG5yx/M8bMm/Ohm5pRaY295gVAjzRY/cclzE1EyUMqe7Xg==" crossorigin="anonymous"></script>
+        
+        <style>
+        .title{
+          
+  font-size: 30px;
+color:#666600;
+            font-weight: bold;
+            }
+            td{
+             font-size: 20px;   
+                
+            }
+            table{
+                
+                width:60%;
+            }
+        </style>
+
+        </head>
+
+<body bgcolor=#FFFFFF link=#003399 vlink=#0099CC>
+
+<center>
+
+
+<p><TABLE id="Contents" border="1" cellpadding="5" cellspacing="0"
+bordercolor="#669999" bgcolor="#D8EBEB" height="25" width="645">
+          <TR>
+            <TD align=center><a href=main.html>About Me</a></td>
+            
+
+            <td align=center>Publications</td>
+              <td align=center><a href=presentations.html>Presentations</a></td>
+              </tr>
+
+</table>
+
+</center>
+
+
+<!----
+<p><a name="Contents">Contents</a></p>
+<dd><a href="#publications">Publications</a>
+<li><a href="#high">High Energy Physics</a>
+<li><a href="#statistical">Statistical Physics</a>
+<li><a href="#atomic">Atomic Physics</a>
+<br><a href="#proceedings">Conference Proceedings</a>
+<br><a href="#dissertation">Dissertation</a>
+</dd>
+<hr align=center width=40%>
+
+--->
+<p><span class="title"><a name="publications">Publications</a></span> <br>
+
+
+<ul><b><font size="+2"><a name=high>High Energy Physics:</a></font></b>
+<ul><center>
+<table cellpadding='5' width=640>
+<tr>
+<td id="data" valign=top>
+</td></tr></table></center></ul>
+
+<b><font size="+2"><a name=high>Statistical Physics:</a></font></b><ul><center>
+<table cellpadding='5' width=640>
+<tr>
+<td id="data1" valign=top>
+ </td></tr></table></center></ul>
+
+      <ul><b><font size="+2"><a name=high>Atomic Physics:</a></font></b><center>
+	    <table cellpadding='5' width=640>
+<tr>
+<td id="data2" valign=top>
+  </td></tr></table></center></ul>
+</ul>
+    <br><a href=#Contents>Back to the menu</a>
+    
+  <p><span class="title"><a name=publications>Conference Proceedings</a></span>
+<ul><center>
+<table cellpadding='5' width=640>    
+<tr>
+<td id="data3" valign=top>
+</td></tr></table></center></ul>
+    
+<br><a href=#Contents>Back to the menu</a>
+
+    <p><span class="title"><a name=dissertation>Dissertation</a></span><ul><center><table cellpadding='5' width=640>
+<tr>
+<td valign=top>
+    <p><li>Alexander Sergeevich Buchel, "<i>Statistical Mechanics Of Cracks Dualities In Supersymmetric Field Theories Orientifolds Of Type IIb Strings With Discrete B Flux</i>", UMI-99-39926-mc (microfiche), 1999. 216pp.Ph.D.Thesis (Advisor: Philip C. Argyres), <a href="http://wwwlib.umi.com/dissertations/fullcit?p9939926">UMI Thesis Server</a>
+        </td></tr></table></center>
+</ul>
+    <script>
+
+    d3.csv("papers.csv", function(data) {
+  //  console.log(data["Author"]);
+        
+        /*
+        
+Author: "Alex Buchel"
+Cat: "y"
+Id: "854"
+Journal: "Nucl.Phys.B<b>957</b> (2020) 115094"
+Source: "2005"
+Title: "On branches of the KS black hole"
+id_article: "133"
+        
+        */
+
+// c1 asc, c2 desc, c3 asc, c4 asc
+data.sort(function (a, b) {
+    return (a["id_article"] < b["id_article"]) ? -1 : (a["id_article"] == b["id_article"]) ?
+        (b["id_article"] - a["id_article"])  : -1;
+});
+        
+        
+
+	//data.sort(sortFunction);
+
+function sortFunction(a, b) {
+    if (a["id_article"] === b["id_article"]) {
+        return 0;
+    }
+    else {
+        return (a["id_article"] < b["id_article"]) ? -1 : 1;
+    }
+}
+
+	
+      var html="";        
+    
+for (var i=0; i<data.length; i++)    {
+    if (data[i]["Cat"]=="y" || data[i]["Cat"]=="b") {        
+	if (data[i]["Source"]=="hep-th/") {
+            var source=", <a target='_blank' href='http://arxiv.org/abs/"+""+data[i]["Id"]+"'>"+"http://arxiv.org/abs/"+data[i]["Id"]+"</a>";
+	} else {
+            var source=", <a target='_blank' href='http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"'>"+"http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"</a>";
+	}
+    html +="<p><li>"+data[i]["Author"]+", \"<i>"+data[i]["Title"]+"</i>\", "+data[i]["Journal"]+source+"</li></p>";
+    }
+}
+       
+ d3.select("#data").html(html); 
+
+
+      var html="";
+
+for (var i=0; i<data.length; i++)    {
+    if (data[i]["Cat"]=="b") {
+        if (data[i]["Source"]=="hep-th/") {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+"0"+data[i]["Id"]+"'>"+"http://arxiv.org/abs/0"+data[i]["Id"]+"</a>";
+        } else {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"'>"+"http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"</a>";
+        }
+    html +="<p><li>"+data[i]["Author"]+", "+data[i]["Title"]+","+data[i]["Journal"]+source+"</li></p>";
+    }
+}
+
+ d3.select("#data1").html(html);
+
+
+
+
+      var html="";
+
+for (var i=0; i<data.length; i++)    {
+    if (data[i]["Cat"]=="a") {
+        if (data[i]["Source"]=="hep-th/") {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+"0"+data[i]["Id"]+"'>"+"http://arxiv.org/abs/0"+data[i]["Id"]+"</a>";
+        } else {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"'>"+"http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"</a>";
+        }
+    html +="<p><li>"+data[i]["Author"]+", "+data[i]["Title"]+","+data[i]["Journal"]+source+"</li></p>";
+    }
+}
+
+ d3.select("#data2").html(html);
+
+	 var html="";
+
+for (var i=0; i<data.length; i++)    {
+    if (data[i]["Cat"]=="c") {
+        if (data[i]["Source"]=="hep-th/") {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+"0"+data[i]["Id"]+"'>"+"http://arxiv.org/abs/0"+data[i]["Id"]+"</a>";
+        } else {
+            var source=". <a target='_blank' href='http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"'>"+"http://arxiv.org/abs/"+data[i]["Source"]+"."+data[i]["Id"]+"</a>";
+        }
+    html +="<p><li>"+data[i]["Author"]+", "+data[i]["Title"]+","+data[i]["Journal"]+source+"</li></p>";
+    }
+}
+
+ d3.select("#data3").html(html);
+
+var d = new Date();
+document.getElementById("demo").innerHTML ="Last updated : "+ d;
+
+	
+    })
+          
+    </script>
+    
+
+<br><a href=#Contents>Back to the menu</a>
+
+<p><center><hr width=640>
+
+<font id="demo" size="-1">Last updated : 2018-05-17</font>
+</center>
+
+
+
+
+</bodY>
+
+</html>
+
